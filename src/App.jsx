@@ -57,7 +57,7 @@ function App() {
     <>
       <p>Testando a aplicação</p>
       <Form>
-        <fieldset>
+        <fieldset required>
           <Label htmlFor="sexo">
             Sexo:
             <InputField type="radio" value="female" checked={sex === "female"} onChange={handleChange}></InputField>
@@ -67,19 +67,19 @@ function App() {
             <InputField type="radio" value="male" checked={sex === "male"} onChange={handleChange}></InputField> Masculino
           </Label>
         </fieldset>
-        <fieldset>
-          <Label htmlFor="idade">
+        <fieldset required>
+          <Label htmlFor="age">
             Idade:
             <InputField type="text" placeholder="Digite a idade" id="age" onChange={handleAgeChange}></InputField>
           </Label>
         </fieldset>
-        <fieldset>
-          <Label htmlFor="peso">
+        <fieldset required>
+          <Label htmlFor="weight">
             Peso:
             <InputField type="text" placeholder="Digite o peso em Kg" id="weight" onChange={handleWeightChange}></InputField>
           </Label>
         </fieldset>
-        <fieldset>
+        <fieldset required>
           <Label htmlFor="creatinina-level" id="level">
             Creatinina:
           </Label>
